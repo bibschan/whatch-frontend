@@ -40,16 +40,16 @@ getMovies(){
 
   render(){
     return (
-      <div className="card">
+      <div className="cardList">
          <img src="" alt ='' />
          <div className="container">
       
         {/* the code below renders all data at the same time */}
-          {/* {
+          {
              this.state.arrayResults.map((element) => (
                 <Card data={element}/>
              ))
-           } */}
+           }
            
          </div>
      </div>
