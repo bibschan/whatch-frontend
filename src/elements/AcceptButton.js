@@ -1,8 +1,11 @@
 import './../scss/App.css';
 
-function AcceptButton() {
+function AcceptButton(props) {
+    const { addMovieToArray } = props;
+    const { id } = props.data;
+
     return(
-        <div className="accept-button">
+        <div className="accept-button" onClick={ () =>  addMovieToArray(id) }>
             <input type="image" src="assets/—Pngtree—3d green check icon_5142993.png" />
         </div>
     )
