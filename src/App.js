@@ -18,13 +18,18 @@ class App extends React.Component {
     })
   }
 
+  authenticateUser = () => {
+    this.setState({
+      authenticated: true,
+    })
+  }
+
   render() {
-    console.log(this.state.movieArray);
     return (
       <div className="app">
-        <Login />
-        <CardList addMovieToArray={this.addMovieToArray}/>
-        {/* < this.state.authenticated && CardList /> */}
+        {!this.state.authenticated && <Login authenticateUser={this.authenticateUser} />}
+        {/* LOADING SCREEN???? */}
+        {this.state.authenticated && <CardList addMovieToArray={this.addMovieToArray} />}
         </div>
       );
   }

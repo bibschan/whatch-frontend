@@ -6,7 +6,7 @@ function AcceptButton(props) {
 
     return(
         <div className="accept-button" onClick={ () =>  addMovieToArray(id) }>
-            <input type="image" src="assets/—Pngtree—3d green check icon_5142993.png" />
+            <input type="image" src="assets/—Pngtree—3d green check icon_5142993.png" alt="accept"/>
         </div>
     )
 }
