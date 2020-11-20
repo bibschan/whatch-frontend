@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Card from './Card';
 
-let apiKey = "677a37fe22msh245d997faf24bc1p1fd6d4jsn758c3d4122f2";
+let apiKey = "";
 
 class CardList extends React.Component {
     
